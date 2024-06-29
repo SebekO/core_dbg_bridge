@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3.8
 import sys
 import argparse
 
@@ -8,7 +8,7 @@ from bus_interface import *
 # Main
 ##################################################################
 def main(argv):
-    
+
     parser = argparse.ArgumentParser()
     parser.add_argument('-t', dest='type',   default='uart',                  help='Device type (uart|socket)')
     parser.add_argument('-d', dest='device', default='/dev/ttyUSB1',          help='Serial Device')
